@@ -1,0 +1,15 @@
+<div class="mb-3 pointer" [routerLink]="['/team', oneTeam.Id]">
+    <div class="alignFlex">
+        <div class="imgCategory">
+            <figure>
+                <img [src]="teamsService.getCategoryImage(oneTeam.Category)" class=" rounded-start" alt="">
+            </figure>
+        </div>
+        <div>
+            <h5>{{oneTeam.Name}}</h5>
+        </div>
+
+
+    </div>
+</div>
+<hr>

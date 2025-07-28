@@ -1,0 +1,49 @@
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+/* Secondary Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* Global styles */
+
+:root {
+    /* Font titles */
+    --primary-font: "Roboto", sans-serif;
+
+    /* Basic color: text and others */
+    --primary-color: #1C2D35;
+
+    /* Others colors */
+    --secondary-color: #8CBBE5;
+    /* botones */
+    --third-color: #FF644C;
+    /* textos alternativos, no principales */
+    --fourth-color: #3b4a51;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: #f8f9fa;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

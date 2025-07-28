@@ -1,0 +1,24 @@
+<div class="container ">
+    <section class=" row">
+        <div class="color col-lg-6  shadow-sm">
+            <h3 class="text-center mb-5">Tus grupos</h3>
+            <app-select-category (selectCategory)="selectCategory($event)"></app-select-category>
+            <div>
+                @for (team of arrTeams; track team.Id) {
+                <app-team-card [oneTeam]="team"></app-team-card>
+
+                }@empty {
+                <article>
+                    <h3>No hay grupos</h3>
+                </article>
+                }
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+
+
+    </section>
+</div>
